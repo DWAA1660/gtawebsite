@@ -1,0 +1,13 @@
+Large tracked files report (generated)
+
+Columns:
+- Size(MB): file size on disk
+- Over100MB: exceeds GitHub non-LFS hard limit (must be LFS)
+- StoredViaLFS: whether Git LFS is tracking the file
+
+Size(MB)	Over100MB	StoredViaLFS	Path
+1376.02	YES	YES	uploads/BANDITO PGLM 7.7A  080714 BD2014.mp4
+102.42	YES	YES	uploads/TACAMO 001 Taxi Test Edited 051022-001.mp4
+102.42	YES	YES	dev/uploads/TACAMO 001 Taxi Test Edited 051022-001.mp4
+93.68	NO	YES	uploads/LONG RANGE COUNTER UAS BASE PROTECTION SYSTEM.mp4
+93.68	NO	YES	dev/uploads/LONG RANGE COUNTER UAS BASE PROTECTION SYSTEM.mp4
