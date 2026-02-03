@@ -795,6 +795,13 @@ h3 { font-size: 1.5rem; }
     color: white;
 }
 
+.page-header {
+    background-color: var(--secondary-color);
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+}
+
 /* Contact Page Styles */
 .contact-wrapper {
     max-width: 800px; 
@@ -828,6 +835,16 @@ h3 { font-size: 1.5rem; }
     justify-content: center; 
     color: var(--primary-color);
     flex-shrink: 0;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact-item span {
+    display: block; 
+    font-size: 0.85rem; 
+    color: var(--text-light);
 }
 
 .map-container {
