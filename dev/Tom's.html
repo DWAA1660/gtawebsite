@@ -1,0 +1,101 @@
+<HTML>
+<HEAD>
+<TITLE>Tom's slideshow experiment</TITLE>
+<META name="description" content="">
+<META name="keywords" content="">
+<META name="generator" content="CuteHTML">
+<script language="Javascript">
+<!--
+//-->
+</script>
+</HEAD>
+<BODY BGCOLOR="#CBCCCA" TEXT="#000000" LINK="#0000FF" VLINK="#800080">
+
+<body onLoad="switchImage('slideImg')">
+
+
+<img src="images/afghanwide02.JPG" width="930" height="240">
+
+<img src="images/Bandito PGLM GLC C CDLB PANORAMIC.JPG" width="930" height="240">
+<img src="images/Bandito PGLM Launch B CDLB PANORAMIC.JPG" width="930" height="240">
+<img src="images/afghan o.JPG" width="930" height="240">
+<img src="images/29 Palms A Pan.JPG" width="930" height="240">
+<img src="images/29 Palms B Pan.JPG" width="930" height="240">
+<img src="images/29 Palms C Pan.JPG" width="930" height="240">
+
+
+
+
+
+
+
+
+<!-- Set the length of pause on each image where 1000 = 1 sec, 2000 = 2 sec -->
+var interval=1500;
+<!-- Determine whether to randomly display images or sequential where 0=sequential and 1=random -->
+var random_display=0;
+<!-- Determine what folder to get the images from -->
+var imageDir="images/";
+
+
+var imageNum=0;
+
+imageArray=new Array();
+
+imageArray[imageNum++]=new imageItem(imageDir+"afghanwide02.JPG" width="930" height="240");
+
+imageArray[imageNum++]=new imageItem(imageDir+"Bandito PGLM GLC C CDLB PANORAMIC.JPG" width="930" height="240");
+
+imageArray[imageNum++]=new imageItem(imageDir+"Bandito PGLM Launch B CDLB PANORAMIC.JPG" width="930" height="240");
+
+imageArray[imageNum++]=new imageItem(imageDir+"afghan o.JPG" width="930" height="240");
+
+imageArray[imageNum++]=new imageItem(imageDir+"29 Palms A Pan.JPG" width="930" height="240");
+
+imageArray[imageNum++]=new imageItem(imageDir+"29 Palms B Pan.JPG" width="930" height="240");
+
+imageArray[imageNum++]=new imageItem(imageDir+"29 Palms C Pan.JPG" width="930" height="240");
+
+var totalImages = imageArray.length;
+
+function imageItem(image_location) {
+this.image_item=new Image();
+this.image_item.src=image_location;
+}
+function get_ImageItemLocation(imageObj){
+return(imageObj.image_item.src)
+}
+
+<!-- Generate random number -->
+function randNum(x,y){
+var range=y-x+1;
+return Math.floor(Math.random()*range)+x;
+}
+
+<!-- Get the next image -->
+function getNextImage(){
+if(random_display){
+imageNum=randNum(0,totalImages-1);
+}
+else{
+imageNum=(imageNum+1)%totalImages;
+}
+
+var new_image=get_ImageItemLocation(imageArray[imageNum]);
+return(new_image);
+}
+
+<!-- Switch Image function -->
+function switchImage(place){
+var new_image=getNextImage();
+document[place].src=new_image;
+var recur_call="switchImage('"+place+"')";
+timerID=setTimeout(recur_call,interval);
+}
+
+
+
+
+
+</BODY>
+</HTML>
