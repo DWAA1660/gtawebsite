@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -98,22 +98,64 @@
                 <p>Please make your request to <a href="mailto:tom@gtaeronautics.com" style="color: var(--primary-color); font-weight: bold;">tom@gtaeronautics.com</a></p>
             </div>
 
-            <!-- Profiles (Commented out in original, restored here for completeness if desired, but following the "Security" note) -->
-            <!-- 
-            <div class="team-grid" style="display: grid; gap: 40px;">
+            <div class="team-grid">
                 
-                <div class="team-member" style="background: white; padding: 30px; border-radius: 8px; box-shadow: var(--shadow-sm); display: flex; gap: 30px; align-items: start;">
-                    <img src="images/tom-rullman.jpg" alt="Thomas W. Rullman" style="border-radius: 4px; max-width: 250px;">
-                    <div>
-                        <h3 style="color: var(--secondary-color);">Thomas W. Rullman</h3>
-                        <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 15px;">President</p>
-                        <p>Tom Rullman is a native of Ohio and graduated from the Ohio State University in 1981 with a Bachelor of Science degree in Aeronautical and Astronautical Engineering. While at college, he joined the United States Navy as an Aviation Reserve Officer Candidate (AVROC) and was commissioned as an officer in September 1981. Upon completion of flight training, he spent six years on active duty completing two WESTPAC cruises aboard the USS Enterprise while attached to VA-94, flying the A-7E Corsair II and logging over 300 carrier landings. His final three years in the Navy were spent as an Adversary Pilot with VA-127 flying the A-4 Skyhawk and F-5E. He graduated from Navy Fighter Weapons School (TOPGUN) in 1987. In 1988 he joined the commercial airline industry and attained the rank of captain on the Boeing 767 and 757 in Los Angeles, California. In 1998 he started the GT Aero Products company, producing large-scale radio control aircraft of composite construction. In 1999 he was elected President of the Unlimited Scale Racing Association, an international racing league for unmanned, Reno-style racing aircraft. He served two years in the position, formulating the standards for racing events and more than doubling the number of events and participation in the league. In 2002 he founded GT Aeronautics to help fulfill future remotely piloted/unmanned aircraft needs and also serves on two subcommittees in the Washington, DC area that are working with the FAA and the RPA/UAS industry to help structure the operation of RPAS in the National Airspace System.</p>
-                        <a href="mailto:tom@gtaeronautics.com" style="color: var(--primary-color); font-weight: bold;">tom@gtaeronautics.com</a>
+                <!-- Member 1 -->
+                <div class="team-member">
+                    <img src="https://placehold.co/400x300?text=Tom+Rullman" alt="Thomas W. Rullman" class="team-img">
+                    <div class="team-info">
+                        <h3>Thomas W. Rullman</h3>
+                        <span class="team-role">President</span>
+                        <p class="team-bio">Tom Rullman is a native of Ohio and graduated from the Ohio State University in 1981 with a Bachelor of Science degree in Aeronautical and Astronautical Engineering. A former Navy pilot and TOPGUN graduate, he founded GT Aeronautics to fulfill future remotely piloted/unmanned aircraft needs.</p>
+                        <a href="mailto:tom@gtaeronautics.com" class="btn-text">Email Tom</a>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-member">
+                    <img src="https://placehold.co/400x300?text=Jane+Doe" alt="Jane Doe" class="team-img">
+                    <div class="team-info">
+                        <h3>Jane Doe</h3>
+                        <span class="team-role">VP of Operations</span>
+                        <p class="team-bio">Jane brings over 20 years of aerospace operations experience. She oversees day-to-day activities and ensures that all projects meet the rigorous standards required by our defense and commercial clients.</p>
+                        <a href="#" class="btn-text">Contact Jane</a>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="team-member">
+                    <img src="https://placehold.co/400x300?text=John+Smith" alt="John Smith" class="team-img">
+                    <div class="team-info">
+                        <h3>John Smith</h3>
+                        <span class="team-role">Chief Engineer</span>
+                        <p class="team-bio">Leading our engineering division, John specializes in composite materials and aerodynamic design. His innovative approaches have been pivotal in the development of the BANDIT and TACAMO systems.</p>
+                        <a href="#" class="btn-text">Contact John</a>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="team-member">
+                    <img src="https://placehold.co/400x300?text=Sarah+Johnson" alt="Sarah Johnson" class="team-img">
+                    <div class="team-info">
+                        <h3>Sarah Johnson</h3>
+                        <span class="team-role">Director of Business Development</span>
+                        <p class="team-bio">Sarah is responsible for forging strategic partnerships and expanding GT Aeronautics' footprint in both the DoD and commercial sectors. She holds an MBA and a background in defense contracting.</p>
+                        <a href="#" class="btn-text">Contact Sarah</a>
+                    </div>
+                </div>
+
+                <!-- Member 5 -->
+                <div class="team-member">
+                    <img src="https://placehold.co/400x300?text=Michael+Brown" alt="Michael Brown" class="team-img">
+                    <div class="team-info">
+                        <h3>Michael Brown</h3>
+                        <span class="team-role">Head of Manufacturing</span>
+                        <p class="team-bio">With expertise in advanced composite manufacturing, Michael oversees our production facilities. He ensures that every airframe delivery meets our high-quality assurance metrics.</p>
+                        <a href="#" class="btn-text">Contact Michael</a>
                     </div>
                 </div>
 
             </div>
-            -->
 
         </div>
     </section>
@@ -135,7 +177,14 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="research.html">Home</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="aboutus.html">About Us <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="aboutus.html">Company Overview</a>
+                                <a href="management.html">Management Team</a>
+                                <a href="employment.html">Employment</a>
+                            </div>
+                        </li>
                         <li><a href="pna.html">Products</a></li>
                         <li><a href="contactus.html">Contact</a></li>
                     </ul>
@@ -161,3 +210,4 @@
     </script>
 </body>
 </html>
+
