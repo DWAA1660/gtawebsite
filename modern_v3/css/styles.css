@@ -155,23 +155,36 @@ h3 { font-size: 1.5rem; }
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: nowrap;
+    padding: 0 1rem; /* Reduced padding for more space */
 }
 
 .logo img {
     height: 50px;
     width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 15px; /* Restored slightly larger gap for better look */
     align-items: center;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.nav-links li {
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .nav-links a {
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: var(--secondary-color);
+    white-space: nowrap;
 }
 
 .nav-links a:hover,
@@ -180,15 +193,20 @@ h3 { font-size: 1.5rem; }
 }
 
 .btn-contact {
-    padding: 8px 20px;
-    background-color: var(--secondary-color);
-    color: white !important;
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color) !important;
     border-radius: 4px;
+    font-weight: 600;
+    white-space: nowrap !important;
+    min-width: fit-content;
+    flex-shrink: 0;
 }
 
 .btn-contact:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color) !important;
+    background-color: var(--primary-dark);
+    color: white !important;
 }
 
 /* Dropdown Menu */
@@ -615,7 +633,7 @@ h3 { font-size: 1.5rem; }
 }
 
 /* Responsive Design */
-@media (max-width: 992px) {
+@media (max-width: 1350px) {
     h1 { font-size: 2.8rem; }
     
     .grid-2, .grid-3, .footer-grid {
