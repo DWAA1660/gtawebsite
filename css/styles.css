@@ -159,6 +159,10 @@ h3 { font-size: 1.5rem; }
     padding: 0 1rem; /* Reduced padding for more space */
 }
 
+.logo {
+    margin-right: 1.5rem;
+}
+
 .logo img {
     height: 50px;
     width: auto;
