@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composite Manufacturing - GT Aeronautics</title>
+    <meta name="description" content="Composite & Fiberglass Molding Techniques. Learn the simplest form of manufacturing process for high quality composite parts.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .book-showcase {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        .book-image img {
+            border-radius: 8px;
+            box-shadow: var(--shadow-lg);
+            max-width: 300px;
+        }
+        .book-details h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        .price-tag {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin: 20px 0;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .book-showcase {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.gif" alt="GT Aeronautics Logo">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Products & Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-group">
+                            <h4>Defense (DoD)</h4>
+                            <a href="pna.html">BANDIT RPAS</a>
+                            <a href="pna.html">TACAMO RPAS</a>
+                            <a href="pna.html">BANDITO PGLM</a>
+                            <a href="sru.html">Stores Release Unit (SRU)</a>
+                        </div>
+                        <div class="dropdown-group">
+                            <h4>Services</h4>
+                            <a href="cfmt.html" class="active">Composite Manufacturing</a>
+                            <a href="cctm.html">Custom Tooling</a>
+                            <a href="uasfc.html">Flight Crews & Training</a>
+                            <a href="consulting.html">Engineering Consulting</a>
+                            <a href="research.html">Research & Development</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Commercial Aircraft <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="gt50t-rpas.html">GT-50T RPAS</a>
+                        <a href="pna.html">GT-60 RPAS</a>
+                        <a href="gt380-rpas.html">GT-380 RPAS</a>
+                        <a href="gt1500-rpas.html">GT-1500 RPAS</a>
+                        <a href="gt100hl-rpas.html">GT-100HL RPAS</a>
+                    </div>
+                </li>
+                <li><a href="contactus.html" class="btn-contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background-color: var(--secondary-color); padding: 60px 0; color: white; text-align: center;">
+        <div class="container">
+            <h1>Composite & Fiberglass Molding Techniques</h1>
+            <p>Master the art of composite manufacturing</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="book-showcase">
+                <div class="book-image">
+                    <img src="images/cfmt1.jpg" alt="Composite & Fiberglass Molding Techniques Book Cover">
+                </div>
+                <div class="book-details">
+                    <h3>Simplify the Process</h3>
+                    <p>The purpose of writing <em>Composite & Fiberglass Molding Techniques</em> was to take a manufacturing process and reduce it to its simplest form. Composite molding in itself is not a complicated process - however, a beginner needs to know the terminology and certain fundamentals of the process.</p>
+                    <p>Armed with good information and the ability to follow basic procedures, a beginner can construct extremely accurate tooling that will produce high quality composite parts - as good or better than commercially-manufactured composite parts. The composite molding process becomes very useful when multiple parts are required or if different composite design lay-ups are being researched in order to determine the best use of composite materials for a given application.</p>
+                </div>
+            </div>
+
+            <div class="book-showcase" style="flex-direction: row-reverse;">
+                <div class="book-image">
+                    <img src="images/cfmt2.jpg" alt="Book Content Preview">
+                </div>
+                <div class="book-details">
+                    <h3>What's Inside</h3>
+                    <p>The colorfully illustrated and bound 26-page booklet contains a list of required materials for creating composite tooling and parts as well as a glossary of associated terms used in the composite molding process.</p>
+                    <p>The booklet explains the basics of positive plug construction, including materials usage, the determination of mold break lines and the set up of the positive plug for mold casting. Materials usage for positive plug construction, as well as mold (tooling) construction and final part lay-up materials and some basic finishing techniques provides the basics for completing a set of tooling for composite parts.</p>
+                    
+                    <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin-top: 30px; text-align: center;">
+                        <span class="price-tag">$26.00 each + shipping</span>
+                        <p>If you are interested in producing composite parts for yourself or for sale, order your copy today!</p>
+                        <a href="contactus.html" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/logo.gif" alt="GT Aeronautics" class="footer-logo">
+                    <p>Homeland Security Through Innovations in Aerospace.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="pna.html">Products</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="research.html">Research & Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> 26 Elk Road, Cody, WY 82414-7810</li>
+                        <li><i class="fas fa-phone"></i> (307) 587-5221</li>
+                        <li><i class="fas fa-envelope"></i> info@gtaeronautics.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2025</span> GT Aeronautics, LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

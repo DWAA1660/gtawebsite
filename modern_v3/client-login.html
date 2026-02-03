@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Login - GT Aeronautics</title>
+    <meta name="description" content="GT Aeronautics Client Login. Restricted access for authorized clients.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+        }
+        .login-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: var(--font-main);
+        }
+        .login-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .login-form button:hover {
+            background-color: var(--primary-dark);
+        }
+        .login-help {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        .login-help a {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.gif" alt="GT Aeronautics Logo">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="aboutus.html">About Us <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="aboutus.html">Company Overview</a>
+                        <a href="management.html">Management Team</a>
+                        <a href="employment.html">Employment</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Products & Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-group">
+                            <h4>Defense (DoD)</h4>
+                            <a href="bandit-rpas.html">BANDIT RPAS</a>
+                            <a href="tacamo-rpas.html">TACAMO RPAS</a>
+                            <a href="bandito-pglm.html">BANDITO PGLM</a>
+                            <a href="sru.html">Stores Release Unit (SRU)</a>
+                        </div>
+                        <div class="dropdown-group">
+                            <h4>Services</h4>
+                            <a href="cfmt.html">Composite Manufacturing</a>
+                            <a href="cctm.html">Custom Tooling</a>
+                            <a href="uasfc.html">Flight Crews & Training</a>
+                            <a href="consulting.html">Engineering Consulting</a>
+                            <a href="research.html">Research & Development</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Commercial Aircraft <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="gt50t-rpas.html">GT-50T RPAS</a>
+                        <a href="gt60-rpas.html">GT-60 RPAS</a>
+                        <a href="gt380-rpas.html">GT-380 RPAS</a>
+                        <a href="gt1500-rpas.html">GT-1500 RPAS</a>
+                        <a href="gt100hl-rpas.html">GT-100HL RPAS</a>
+                        <a href="gta-texan.html">AT-6 Texan</a>
+                        <a href="uav-engines.html">UAV Engines</a>
+                    </div>
+                </li>
+                <li><a href="contactus.html" class="btn-contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background-color: var(--secondary-color); padding: 60px 0; color: white; text-align: center;">
+        <div class="container">
+            <h1>Client Login</h1>
+            <p>Restricted Access</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="login-container">
+                <i class="fas fa-lock login-icon"></i>
+                <h2 style="margin-bottom: 20px; font-size: 1.8rem; color: var(--secondary-color);">Secure Login</h2>
+                <p style="margin-bottom: 30px; color: var(--text-light);">Please enter your credentials to access the client area.</p>
+                
+                <form class="login-form" onsubmit="event.preventDefault(); alert('Login functionality is currently disabled for this preview.');">
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+
+                <div class="login-help">
+                    <p>Forgot your password? <a href="contactus.html">Contact Support</a></p>
+                    <p>Need access? <a href="contactus.html">Request Account</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/logo.gif" alt="GT Aeronautics" class="footer-logo">
+                    <p>Homeland Security Through Innovations in Aerospace.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="pna.html">Products</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> 26 Elk Road, Cody, WY 82414-7810</li>
+                        <li><i class="fas fa-phone"></i> (307) 587-5221</li>
+                        <li><i class="fas fa-envelope"></i> info@gtaeronautics.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2025</span> GT Aeronautics, LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

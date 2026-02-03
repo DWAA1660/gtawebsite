@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - GT Aeronautics</title>
+    <meta name="description" content="Frequently Asked Questions about GT Aeronautics, our products, and services.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--secondary-color);
+            background-color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        .faq-question:hover {
+            background-color: #f9f9f9;
+        }
+        .faq-question i {
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px; /* Approximate max height */
+            border-top: 1px solid #eee;
+        }
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.gif" alt="GT Aeronautics Logo">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Products & Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-group">
+                            <h4>Defense (DoD)</h4>
+                            <a href="pna.html">BANDIT RPAS</a>
+                            <a href="pna.html">TACAMO RPAS</a>
+                            <a href="pna.html">BANDITO PGLM</a>
+                            <a href="sru.html">Stores Release Unit (SRU)</a>
+                        </div>
+                        <div class="dropdown-group">
+                            <h4>Services</h4>
+                            <a href="cfmt.html">Composite Manufacturing</a>
+                            <a href="cctm.html">Custom Tooling</a>
+                            <a href="uasfc.html">Flight Crews & Training</a>
+                            <a href="consulting.html">Engineering Consulting</a>
+                            <a href="research.html">Research & Development</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Commercial Aircraft <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="gt50t-rpas.html">GT-50T RPAS</a>
+                        <a href="pna.html">GT-60 RPAS</a>
+                        <a href="gt380-rpas.html">GT-380 RPAS</a>
+                        <a href="gt1500-rpas.html">GT-1500 RPAS</a>
+                        <a href="gt100hl-rpas.html">GT-100HL RPAS</a>
+                    </div>
+                </li>
+                <li><a href="contactus.html" class="btn-contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background-color: var(--secondary-color); padding: 60px 0; color: white; text-align: center;">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Common questions about our products and services</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is the mission of GT Aeronautics?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>The mission of GT Aeronautics is to support homeland security of the United States and the aerospace industry by providing innovative remotely piloted/unmanned aircraft systems to the Department of Defense (DoD) and commercial customers. Collateral missions include commercial RPAS/UAS operations, RPAS/UAS Flight Services, RPAS/UAS Flight Training, Engineering Consulting, and Composite Parts Manufacturing, Tooling, and Composite Repair.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is the company structure of GT Aeronautics?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>GT Aeronautics is a privately owned and operated Limited Liability Company registered in the State of Wyoming. The company is considered a small, veteran-owned, disadvantaged business and is registered with the Central Contractors Registry.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Why does GT Aeronautics strictly conform to "Made in the USA"?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>The primary goal for GT Aeronautics is to create and keep jobs in the United States. By requiring all of the parts of our aircraft to be "Made in the USA", we not only provide completely U.S. built aircraft, but we also help promote and create additional jobs for Americans - a desirable goal that strengthens our U.S. economy.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Will GT Aeronautics sell their products to foreign customers?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, but only with full compliance of U.S. Department of Commerce regulations, State Department regulations, International Traffic in Arms Regulations (ITAR) and only if the sale and/or use of the product(s) does not impact the security of the United States or its allies.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Can commercial organizations purchase GTA systems?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>GT Aeronautics remotely piloted/unmanned aircraft systems and products are available to commercial organizations and individuals as well as government and military organizations, subject to U.S. Department of Commerce regulations, State Department regulations, International Traffic in Arms Regulations (ITAR) and only if the sale and/or use of the product(s) does not impact the security of the United States or its allies.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What experience is necessary to fly a Remotely Piloted Aircraft System?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>While our remotely piloted/unmanned aircraft systems are constructed so that they may be operated with minimal flight experience, rated pilots and operators that have previous experience with manned aircraft and/or radio control aircraft will have a distinct advantage when it comes to operating our unmanned aircraft systems. Additionally, GT Aeronautics recommends that all operators of Remotely Piloted Aircraft Systems should be rated pilots to ensure the safe operation of the system within the National Airspace System.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do GT Aeronautics UAS have airworthiness certificates?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Airworthiness Type Certification of the GT380 RPAS began in February 2017 with the FAA and is ongoing. The GT1500 RPAS and the GT100HL will also achieve FAA Type Certification in the future.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Are there any limitations for the operation of GTA unmanned aircraft?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>GT Aeronautics Remotely Piloted Aircraft Systems may be operated during the day or night and even in weather. However, current restrictions by the FAA limit commercial operation of unmanned aircraft systems to day (and now night) VFR flight. Military operations of Remotely Piloted Aircraft Systems within military restricted areas is conducted in accordance with military flight rules and the military flight clearance obtained for the specific system.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Does GTA provide complete systems or just the aircraft platform?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Both. The Remotely Piloted Aircraft Systems manufactured by GT Aeronautics are complete systems that are ready to fly and include the aircraft, Ground Control Station, all required support equipment, and operator training. We will also provide our airframes to DoD and commercial customers that wish to integrate the airframe with their own avionics. GT Aeronautics can also design and manufacture custom aircraft and/or airframes for the specific needs and applications of our clients.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Does GT Aeronautics work with manned aircraft systems?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. GT Aeronautics currently is providing services for optionally-piloted aircraft systems and can provide support for manned aircraft as well, such as Engineering Consulting, Composite Tooling, Composite Parts & Manufacturing, and composite repair work. Our facility also provides composite parts, manufacturing, and repair work for automobiles, motorcycles, and watercraft.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/logo.gif" alt="GT Aeronautics" class="footer-logo">
+                    <p>Homeland Security Through Innovations in Aerospace.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="pna.html">Products</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="research.html">Research & Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> 26 Elk Road, Cody, WY 82414-7810</li>
+                        <li><i class="fas fa-phone"></i> (307) 587-5221</li>
+                        <li><i class="fas fa-envelope"></i> info@gtaeronautics.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2025</span> GT Aeronautics, LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
