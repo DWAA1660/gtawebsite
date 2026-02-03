@@ -139,6 +139,11 @@ h3 { font-size: 1.5rem; }
 }
 
 /* Navbar */
+#navbar-placeholder {
+    min-height: 80px; /* Prevent layout shift */
+    display: block;
+}
+
 .navbar {
     background-color: white;
     box-shadow: var(--shadow-sm);
@@ -518,6 +523,47 @@ h3 { font-size: 1.5rem; }
     font-weight: 600;
 }
 
+/* Detailed News Article Styles */
+.news-article {
+    margin-bottom: 60px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.news-header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.news-header h2 {
+    margin-top: 15px;
+}
+
+.news-badge {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.news-media img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.news-caption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+}
+
 /* CTA Section */
 .cta-section {
     background-color: var(--secondary-color);
@@ -822,6 +868,39 @@ h3 { font-size: 1.5rem; }
 }
 
 /* Product Page Styles */
+.product-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+@media (max-width: 992px) {
+    .product-content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    /* Reorder columns on mobile if needed (specs first or images first) */
+    /* Currently HTML order is Specs (Left), Images (Right). 
+       On mobile, they will stack Specs then Images. 
+       If we want Images first, we can use order property. */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 992px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
 .specs-table {
     width: 100%;
     border-collapse: collapse;
@@ -834,6 +913,28 @@ h3 { font-size: 1.5rem; }
 .specs-table tr:first-child td {
     border-top: 1px solid #eee;
 }
+
+.product-content h2 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.pricing-box {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.price {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin: 10px 0;
+}
+
 .specs-table strong {
     color: var(--secondary-color);
 }
@@ -1002,4 +1103,208 @@ h3 { font-size: 1.5rem; }
     .contact-wrapper {
         padding: 20px;
     }
+}
+
+/* Industry News Styles */
+.news-archive-item {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+.news-archive-item:last-child {
+    border-bottom: none;
+}
+.archive-date {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+.news-archive-item p {
+    margin-bottom: 10px;
+}
+
+/* Event Styles */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.event-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: var(--transition);
+}
+.event-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+.event-date {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 120px;
+}
+.event-date .month {
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.event-date .days {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.event-date .year {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.event-details h3 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+.event-details p {
+    margin-bottom: 10px;
+    color: var(--text-light);
+}
+.event-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .event-date {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+}
+
+/* Links Page Styles */
+.links-category {
+    margin-bottom: 50px;
+}
+.links-category h2 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.link-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border-left: 3px solid transparent;
+}
+.link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--primary-color);
+}
+.link-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+.link-card a {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    word-break: break-all;
+}
+.link-card a:hover {
+    text-decoration: underline;
+}
+
+/* FAQ Page Styles */
+.faq-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.faq-question {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+.faq-question:hover {
+    background-color: #f9f9f9;
+}
+.faq-question i {
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+.faq-item.active .faq-answer {
+    padding: 20px;
+    max-height: 500px;
+    border-top: 1px solid #eee;
+}
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+/* Employment Page Styles */
+.job-list {
+    display: grid;
+    gap: 20px;
+}
+.job-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--primary-color);
+}
+.job-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+.application-info {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 60px;
+}
+.application-info h3 {
+    color: var(--primary-color);
 }

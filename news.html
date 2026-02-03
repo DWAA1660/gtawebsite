@@ -14,62 +14,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.gif" alt="GT Aeronautics Logo">
-            </a>
-            <button class="mobile-menu-btn" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="pna.html">Products</a></li>
-                <li class="dropdown">
-                    <a href="#">Products & Services <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <div class="dropdown-group">
-                            <h4>Defense (DoD)</h4>
-                            <a href="pna.html">BANDIT RPAS</a>
-                            <a href="pna.html">TACAMO RPAS</a>
-                            <a href="pna.html">BANDITO PGLM</a>
-                            <a href="sru.html">Stores Release Unit (SRU)</a>
-                        </div>
-                        <div class="dropdown-group">
-                            <h4>Services</h4>
-                            <a href="cfmt.html">Composite Manufacturing</a>
-                            <a href="cctm.html">Custom Tooling</a>
-                            <a href="uasfc.html">Flight Crews & Training</a>
-                            <a href="consulting.html">Engineering Consulting</a>
-                            <a href="research.html">Research & Development</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Commercial Aircraft <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="gt50t-rpas.html">GT-50T RPAS</a>
-                        <a href="pna.html">GT-60 RPAS</a>
-                        <a href="gt380-rpas.html">GT-380 RPAS</a>
-                        <a href="gt1500-rpas.html">GT-1500 RPAS</a>
-                        <a href="gt100hl-rpas.html">GT-100HL RPAS</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">News & Resources <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="news.html" class="active">Company News</a>
-                        <a href="industry-news.html">Industry News</a>
-                        <a href="events.html">Industry Events</a>
-                        <a href="links.html">Links</a>
-                        <a href="faq.html">FAQ</a>
-                    </div>
-                </li>
-                <li><a href="contactus.html" class="btn-contact">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="navbar-placeholder"></div>
 
     <!-- Page Header -->
     <header class="page-header" style="background-color: var(--secondary-color); padding: 60px 0; color: white; text-align: center;">
@@ -84,10 +29,10 @@
         <div class="container">
             
             <!-- News Item 1 -->
-            <article class="news-article" style="margin-bottom: 60px; background: white; padding: 30px; border-radius: 8px; box-shadow: var(--shadow-sm);">
-                <div class="news-header" style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-                    <span class="news-date" style="background: var(--primary-color); color: var(--secondary-color); padding: 5px 10px; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">06/17/25</span>
-                    <h2 style="margin-top: 15px;">Congressional Representative Harriett Hageman Visits GTA</h2>
+            <article class="news-article">
+                <div class="news-header">
+                    <span class="news-badge">06/17/25</span>
+                    <h2>Congressional Representative Harriett Hageman Visits GTA</h2>
                 </div>
                 <div class="grid-2" style="gap: 30px;">
                     <div class="news-content">
@@ -95,26 +40,26 @@
                         <p>Tom Rullman and Tiffine Canepa provided the brief, focusing on the highly successful development of the Bandito PGLM Counter UAS capabilities. The brief also focused on the current and future battlefield where small, low-cost UAS are being used to destroy multi-million dollar assets.</p>
                     </div>
                     <div class="news-media">
-                        <img src="images/news-hageman.jpg" alt="Harriett Hageman Visit" style="border-radius: 8px; width: 100%;">
-                        <p style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 5px;">Wyoming Congresswoman Harriett Hageman & GTA President Tom Rullman</p>
+                        <img src="images/news-hageman.jpg" alt="Harriett Hageman Visit">
+                        <p class="news-caption">Wyoming Congresswoman Harriett Hageman & GTA President Tom Rullman</p>
                     </div>
                 </div>
             </article>
 
             <!-- News Item 2 -->
-            <article class="news-article" style="margin-bottom: 60px; background: white; padding: 30px; border-radius: 8px; box-shadow: var(--shadow-sm);">
+            <article class="news-article">
                 <div class="news-header">
-                    <span class="news-date" style="background: var(--primary-color); color: var(--secondary-color); padding: 5px 10px; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">02/19/25</span>
-                    <h2 style="margin-top: 15px;">Park County Prosperity Podcast</h2>
+                    <span class="news-badge">02/19/25</span>
+                    <h2>Park County Prosperity Podcast</h2>
                 </div>
                 <p>Today GT Aeronautics' President and CEO Tom Rullman, along with Rebekah Burns of the Powell Economic Partnership (PEP), joined radio show host Mack Watson of Big Horn Basin Media in a live radio podcast regarding the economic growth of the Powell Municipal Airport and the City of Powell. The show examined economic growth and "generational development".</p>
             </article>
 
             <!-- News Item 3 -->
-            <article class="news-article" style="margin-bottom: 60px; background: white; padding: 30px; border-radius: 8px; box-shadow: var(--shadow-sm);">
+            <article class="news-article">
                 <div class="news-header">
-                    <span class="news-date" style="background: var(--primary-color); color: var(--secondary-color); padding: 5px 10px; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">06/25/22</span>
-                    <h2 style="margin-top: 15px;">Heart Mountain Challenge</h2>
+                    <span class="news-badge">06/25/22</span>
+                    <h2>Heart Mountain Challenge</h2>
                 </div>
                 <div class="grid-2" style="gap: 30px;">
                     <div class="news-content">
@@ -122,16 +67,16 @@
                         <p>The event was attended by 115 shooters. Entry registration fees support the Special Operations Warrior Foundation, which provides complete education funding to the children of fallen warriors.</p>
                     </div>
                     <div class="news-media">
-                        <img src="images/news-hmc.jpg" alt="Heart Mountain Challenge" style="border-radius: 8px; width: 100%;">
+                        <img src="images/news-hmc.jpg" alt="Heart Mountain Challenge">
                     </div>
                 </div>
             </article>
 
             <!-- News Item 4 -->
-            <article class="news-article" style="margin-bottom: 60px; background: white; padding: 30px; border-radius: 8px; box-shadow: var(--shadow-sm);">
+            <article class="news-article">
                 <div class="news-header">
-                    <span class="news-date" style="background: var(--primary-color); color: var(--secondary-color); padding: 5px 10px; border-radius: 4px; font-weight: bold; font-size: 0.9rem;">06/22/22</span>
-                    <h2 style="margin-top: 15px;">Live-Fire Test of 35mm Rocket</h2>
+                    <span class="news-badge">06/22/22</span>
+                    <h2>Live-Fire Test of 35mm Rocket</h2>
                 </div>
                 <div class="grid-2" style="gap: 30px;">
                     <div class="news-content">
@@ -139,7 +84,7 @@
                         <p>The test was an absolute success as the 35mm rocket left the rocket pod like a homesick angel, deploying its folding-fins correctly, and achieving its predicted target altitude.</p>
                     </div>
                     <div class="news-media">
-                        <img src="images/news-rocket-fire.jpg" alt="Rocket Fire Test" style="border-radius: 8px; width: 100%;">
+                        <img src="images/news-rocket-fire.jpg" alt="Rocket Fire Test">
                     </div>
                 </div>
             </article>

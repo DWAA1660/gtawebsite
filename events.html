@@ -10,79 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .event-list {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .event-card {
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: var(--shadow-sm);
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            transition: var(--transition);
-        }
-        .event-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-        .event-date {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            min-width: 120px;
-        }
-        .event-date .month {
-            display: block;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            font-weight: 600;
-        }
-        .event-date .days {
-            display: block;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-        .event-date .year {
-            display: block;
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-        .event-details h3 {
-            margin-bottom: 10px;
-            color: var(--text-color);
-        }
-        .event-details p {
-            margin-bottom: 10px;
-            color: var(--text-light);
-        }
-        .event-link {
-            color: var(--primary-color);
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-        @media (max-width: 768px) {
-            .event-card {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 15px;
-            }
-            .event-date {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px 20px;
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -185,47 +112,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <img src="images/logo.gif" alt="GT Aeronautics" class="footer-logo">
-                    <p>Homeland Security Through Innovations in Aerospace.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="pna.html">Products</a></li>
-                        <li><a href="research.html">Research & Development</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
-                    <ul class="contact-list">
-                        <li><i class="fas fa-map-marker-alt"></i> 26 Elk Road, Cody, WY 82414-7810</li>
-                        <li><i class="fas fa-phone"></i> (307) 587-5221</li>
-                        <li><i class="fas fa-envelope"></i> info@gtaeronautics.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="year">2025</span> GT Aeronautics, LLC. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
+    <script src="js/components.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>
 
