@@ -221,6 +221,10 @@ h3 { font-size: 1.5rem; }
     align-items: center;
 }
 
+.dropdown > a i {
+    transition: transform 0.3s ease;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -241,8 +245,11 @@ h3 { font-size: 1.5rem; }
     gap: 30px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+/* Only allow hover on desktop/large screens */
+@media (min-width: 1351px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 }
 
 .dropdown-group h4 {
@@ -646,6 +653,8 @@ h3 { font-size: 1.5rem; }
     
     .mobile-menu-btn {
         display: block;
+        font-size: 2rem; /* Increased size */
+        padding: 10px; /* Larger touch target */
     }
     
     .nav-links {
@@ -655,11 +664,15 @@ h3 { font-size: 1.5rem; }
         width: 100%;
         background-color: white;
         flex-direction: column;
-        padding: 20px;
+        padding: 20px 20px 40px 20px; /* Extra bottom padding for scrolling */
         box-shadow: var(--shadow-md);
         transform: translateY(-150%);
         transition: var(--transition);
-        align-items: flex-start;
+        align-items: center; /* Center items in mobile menu */
+        text-align: center;
+        z-index: 999;
+        max-height: calc(100vh - 80px); /* Prevent overflow */
+        overflow-y: auto; /* Enable scrolling */
     }
     
     .nav-links.active {
@@ -667,6 +680,13 @@ h3 { font-size: 1.5rem; }
     }
     
     .nav-links li {
+        width: 100%;
+        padding: 0; /* Removed padding here, moved to links */
+    }
+
+    .nav-links > li > a {
+        display: block;
+        padding: 15px 0; /* Larger touch target */
         width: 100%;
     }
     
@@ -678,21 +698,35 @@ h3 { font-size: 1.5rem; }
     
     .dropdown > a {
         display: flex;
-        justify-content: space-between;
+        justify-content: center; /* Center dropdown trigger */
+        align-items: center;
         width: 100%;
+        gap: 10px;
+        padding: 15px 0; /* Larger touch target */
     }
     
     .dropdown-content {
         position: static;
         transform: none;
         box-shadow: none;
-        padding: 0 0 0 15px;
+        padding: 0;
         border: none;
-        display: none;
+        display: none; /* Hidden by default */
+        text-align: center;
+        background-color: var(--bg-light);
+        overflow: hidden; /* For smooth expansion if we added animation, but standard display toggle is safer for now */
     }
     
     .dropdown.active .dropdown-content {
         display: block;
+        padding: 10px 0; /* Add padding only when open */
+        border-top: 1px solid #eee;
+        animation: fadeIn 0.3s ease;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
     }
     
     .btn-contact {
@@ -702,16 +736,34 @@ h3 { font-size: 1.5rem; }
     }
 }
 
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .hero-btns {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 576px) {
     h1 { font-size: 2rem; }
     h2 { font-size: 1.8rem; }
     
     .hero-btns {
         flex-direction: column;
+        align-items: center;
     }
     
     .btn {
         text-align: center;
+        width: 100%;
+        max-width: 300px;
     }
 }
 
@@ -757,6 +809,15 @@ h3 { font-size: 1.5rem; }
 @media (max-width: 768px) {
     .about-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .hero-btns {
+        justify-content: center;
     }
 }
 

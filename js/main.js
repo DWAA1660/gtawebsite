@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Date Update (in info-bar, usually static)
+    const dateElement = document.getElementById('currentDate');
+    if (dateElement) {
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        dateElement.textContent = new Date().toLocaleDateString('en-US', options);
+    }
+});
+
+// Initialize Navbar/Footer dependent logic after components are loaded
+document.addEventListener('componentsLoaded', function() {
     
     // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -25,18 +35,28 @@ document.addEventListener('DOMContentLoaded', function() {
     
     dropdowns.forEach(dropdown => {
         dropdown.addEventListener('click', function(e) {
-            // Only on mobile
-            if (window.innerWidth <= 992) {
+            // Only on mobile/tablet where the hamburger menu is shown
+            // Using matchMedia to exactly match CSS media query
+            if (window.matchMedia('(max-width: 1350px)').matches) {
                 e.preventDefault();
-                const parent = this.parentElement;
-                parent.classList.toggle('active');
+                e.stopPropagation(); // Stop bubbling
                 
-                // Toggle chevron
-                const icon = this.querySelector('i');
-                if (parent.classList.contains('active')) {
-                    icon.style.transform = 'rotate(180deg)';
-                } else {
-                    icon.style.transform = 'rotate(0deg)';
+                const parent = this.parentElement;
+                const wasActive = parent.classList.contains('active');
+                
+                // 1. Reset ALL dropdowns to closed state
+                document.querySelectorAll('.dropdown').forEach(d => {
+                    d.classList.remove('active');
+                    const icon = d.querySelector('a i');
+                    if (icon) icon.style.transform = 'rotate(0deg)';
+                });
+
+                // 2. If the clicked dropdown was NOT active, open it now
+                // (If it WAS active, we just closed it in step 1, so we're done - toggled off)
+                if (!wasActive) {
+                    parent.classList.add('active');
+                    const icon = this.querySelector('i');
+                    if (icon) icon.style.transform = 'rotate(180deg)';
                 }
             }
         });
@@ -45,18 +65,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Sticky Navbar Transition
     const navbar = document.querySelector('.navbar');
     
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            navbar.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-        } else {
-            navbar.style.boxShadow = '0 2px 5px rgba(0,0,0,0.05)';
-        }
-    });
-
-    // Date Update
-    const dateElement = document.getElementById('currentDate');
-    if (dateElement) {
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        dateElement.textContent = new Date().toLocaleDateString('en-US', options);
+    if (navbar) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.boxShadow = '0 2px 5px rgba(0,0,0,0.05)';
+            }
+        });
     }
 });
