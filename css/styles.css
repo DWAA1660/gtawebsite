@@ -187,6 +187,9 @@ h3 { font-size: 1.5rem; }
 .nav-links li {
     flex-shrink: 0;
     white-space: nowrap;
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links a {
@@ -255,6 +258,14 @@ h3 { font-size: 1.5rem; }
     .dropdown:hover .dropdown-content {
         display: block;
     }
+}
+
+.dropdown-group {
+    margin-bottom: 15px;
+}
+
+.dropdown-group:last-child {
+    margin-bottom: 0;
 }
 
 .dropdown-group h4 {
@@ -729,6 +740,8 @@ h3 { font-size: 1.5rem; }
     .nav-links li {
         width: 100%;
         padding: 0; /* Removed padding here, moved to links */
+        height: auto;
+        display: block;
     }
 
     .nav-links > li > a {
