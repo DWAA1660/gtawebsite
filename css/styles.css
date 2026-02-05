@@ -1292,10 +1292,61 @@ h3 { font-size: 1.5rem; }
     border-radius: 8px;
     box-shadow: var(--shadow-sm);
     border-left: 4px solid var(--primary-color);
+    transition: var(--transition);
 }
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
 .job-card h3 {
     color: var(--secondary-color);
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.job-header i {
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.job-card.active .job-header i {
+    transform: rotate(180deg);
+}
+
+.job-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.3s ease;
+    opacity: 0;
+}
+
+.job-card.active .job-details {
+    max-height: 1000px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    opacity: 1;
+}
+
+.job-details h4 {
+    font-size: 1rem;
     margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.job-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.job-details li {
+    margin-bottom: 5px;
 }
 .application-info {
     background-color: var(--secondary-color);
