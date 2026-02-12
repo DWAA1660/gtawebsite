@@ -15,8 +15,8 @@ const navbarHTML = `
                     <a href="aboutus.html">About Us <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
                         <a href="aboutus.html">Company Overview</a>
-                        <a href="management.html">Management Team</a>
                         <a href="employment.html">Employment</a>
+                        <a href="research.html">Research & Development</a>
                     </div>
                 </li>
                 <li class="dropdown">
@@ -44,7 +44,6 @@ const navbarHTML = `
                             <a href="cctm.html">Custom Tooling</a>
                             <a href="uasfc.html">Flight Crews & Training</a>
                             <a href="consulting.html">Engineering Consulting</a>
-                            <a href="research.html">Research & Development</a>
                         </div>
                     </div>
                 </li>

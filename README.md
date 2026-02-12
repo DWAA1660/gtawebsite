@@ -15,7 +15,7 @@ This folder contains a fully modernized version of the GT Aeronautics website (v
 ## Pages Migrated
 
 - **Home**: `index.html`
-- **Company**: `aboutus.html`, `management.html`, `employment.html`, `contactus.html`, `faq.html`
+- **Company**: `aboutus.html`, `employment.html`, `contactus.html`, `faq.html`, `research.html`
 - **Products (Defense)**:
   - `bandit-rpas.html` (Bandit UAS)
   - `tacamo-rpas.html` (Tacamo UAS)
@@ -32,7 +32,6 @@ This folder contains a fully modernized version of the GT Aeronautics website (v
   - `cctm.html` (Custom Tooling)
   - `uasfc.html` (Flight Crews & Training)
   - `consulting.html` (Engineering Consulting)
-  - `research.html` (Research & Development)
 - **News & Resources**:
   - `news.html` (Company News)
 

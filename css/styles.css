@@ -1016,57 +1016,6 @@ h3 { font-size: 1.5rem; }
     gap: 40px;
 }
 
-/* Management Team Styles */
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-}
-
-.team-member {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-}
-
-.team-member:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-}
-
-.team-img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-}
-
-.team-info {
-    padding: 25px;
-}
-
-.team-info h3 {
-    margin-bottom: 5px;
-    color: var(--secondary-color);
-}
-
-.team-role {
-    color: var(--primary-color);
-    font-weight: 600;
-    margin-bottom: 15px;
-    display: block;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-}
-
-.team-bio {
-    color: var(--text-light);
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-}
-
 .contact-item {
     display: flex; 
     gap: 15px; 
