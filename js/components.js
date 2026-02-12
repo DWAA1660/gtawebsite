@@ -75,6 +75,7 @@ const footerHTML = `
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="pna.html">Products</a></li>
                         <li><a href="research.html">Research & Development</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
