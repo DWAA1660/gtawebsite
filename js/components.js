@@ -43,12 +43,9 @@ const navbarHTML = `
                     <a href="#">Commercial Aircraft <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
                         <a href="gt50t-rpas.html">GT-50T RPAS</a>
-                        <a href="gt60-rpas.html">GT-60 RPAS</a>
                         <a href="gt380-rpas.html">GT-380 RPAS</a>
                         <a href="gt1500-rpas.html">GT-1500 RPAS</a>
                         <a href="gt100hl-rpas.html">GT-100HL RPAS</a>
-                        <a href="gta-texan.html">AT-6 Texan</a>
-                        <a href="uav-engines.html">UAV Engines</a>
                     </div>
                 </li>
                 <li><a href="news.html">Company News</a></li>

@@ -26,9 +26,6 @@ This folder contains a fully modernized version of the GT Aeronautics website (v
   - `gt50t-rpas.html`
   - `gt380-rpas.html`
   - `gt1500-rpas.html`
-  - `gt60-rpas.html`
-  - `gta-texan.html`
-  - `uav-engines.html`
 - **Services**:
   - `pna.html` (Products & Services Overview)
   - `cfmt.html` (Composite Manufacturing)
