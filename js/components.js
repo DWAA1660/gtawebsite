@@ -20,14 +20,23 @@ const navbarHTML = `
                     </div>
                 </li>
                 <li class="dropdown">
+                    <a href="#">Defense Systems <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="bandit-rpas.html">BANDIT RPAS</a>
+                        <a href="tacamo-rpas.html">TACAMO RPAS</a>
+                        <a href="bandito-pglm.html">BANDITO PGLM</a>
+                        <a href="sru.html">Stores Release Unit (SRU)</a>
+                    </div>
+                </li>
+                <li class="dropdown">
                     <a href="#">Products & Services <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
                         <div class="dropdown-group">
-                            <h4>Defense (DoD)</h4>
-                            <a href="bandit-rpas.html">BANDIT RPAS</a>
-                            <a href="tacamo-rpas.html">TACAMO RPAS</a>
-                            <a href="bandito-pglm.html">BANDITO PGLM</a>
-                            <a href="sru.html">Stores Release Unit (SRU)</a>
+                            <h4>Commercial Aircraft</h4>
+                            <a href="gt50t-rpas.html">GT-50T RPAS</a>
+                            <a href="gt380-rpas.html">GT-380 RPAS</a>
+                            <a href="gt1500-rpas.html">GT-1500 RPAS</a>
+                            <a href="gt100hl-rpas.html">GT-100HL RPAS</a>
                         </div>
                         <div class="dropdown-group">
                             <h4>Services</h4>
@@ -37,15 +46,6 @@ const navbarHTML = `
                             <a href="consulting.html">Engineering Consulting</a>
                             <a href="research.html">Research & Development</a>
                         </div>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Commercial Aircraft <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="gt50t-rpas.html">GT-50T RPAS</a>
-                        <a href="gt380-rpas.html">GT-380 RPAS</a>
-                        <a href="gt1500-rpas.html">GT-1500 RPAS</a>
-                        <a href="gt100hl-rpas.html">GT-100HL RPAS</a>
                     </div>
                 </li>
                 <li><a href="news.html">Company News</a></li>
