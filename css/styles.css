@@ -455,14 +455,16 @@ h3 { font-size: 1.5rem; }
     overflow: hidden;
 }
 
-.news-image img {
+.news-image img,
+.news-image video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: var(--transition);
 }
 
-.news-card:hover .news-image img {
+.news-card:hover .news-image img,
+.news-card:hover .news-image video {
     transform: scale(1.05);
 }
 

@@ -26,6 +26,7 @@ const navbarHTML = `
                         <a href="tacamo-rpas.html">TACAMO RPAS</a>
                         <a href="bandito-pglm.html">BANDITO PGLM</a>
                         <a href="sru.html">Stores Release Unit (SRU)</a>
+                        <a href="counter-uas.html">Counter UAS Defense</a>
                     </div>
                 </li>
                 <li class="dropdown">

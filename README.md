@@ -21,6 +21,7 @@ This folder contains a fully modernized version of the GT Aeronautics website (v
   - `tacamo-rpas.html` (Tacamo UAS)
   - `bandito-pglm.html` (Bandito MAV)
   - `sru.html` (Stores Release Unit)
+  - `counter-uas.html` (Counter UAS Base Protection)
 - **Products (Commercial)**:
   - `gt100hl-rpas.html`
   - `gt50t-rpas.html`
