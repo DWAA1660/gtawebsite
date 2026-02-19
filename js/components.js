@@ -20,7 +20,7 @@ const navbarHTML = `
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Defense Systems <i class="fas fa-chevron-down"></i></a>
+                    <a href="defense-products.html">Defense Systems <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
                         <a href="bandit-rpas.html">BANDIT RPAS</a>
                         <a href="tacamo-rpas.html">TACAMO RPAS</a>
@@ -33,14 +33,14 @@ const navbarHTML = `
                     <a href="#">Products & Services <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
                         <div class="dropdown-group">
-                            <h4>Commercial Aircraft</h4>
+                            <h4><a href="commercial-products.html" style="color: inherit; text-decoration: none;">Commercial Aircraft</a></h4>
                             <a href="gt50t-rpas.html">GT-50T RPAS</a>
                             <a href="gt380-rpas.html">GT-380 RPAS</a>
                             <a href="gt1500-rpas.html">GT-1500 RPAS</a>
                             <a href="gt100hl-rpas.html">GT-100HL RPAS</a>
                         </div>
                         <div class="dropdown-group">
-                            <h4>Services</h4>
+                            <h4><a href="services.html" style="color: inherit; text-decoration: none;">Services</a></h4>
                             <a href="cfmt.html">Composite Manufacturing</a>
                             <a href="cctm.html">Custom Tooling</a>
                             <a href="uasfc.html">Flight Crews & Training</a>
@@ -74,7 +74,9 @@ const footerHTML = `
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="pna.html">Products</a></li>
+                        <li><a href="defense-products.html">Defense Systems</a></li>
+                        <li><a href="commercial-products.html">Commercial Aircraft</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="research.html">Research & Development</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contactus.html">Contact</a></li>

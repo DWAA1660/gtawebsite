@@ -16,19 +16,18 @@ This folder contains a fully modernized version of the GT Aeronautics website (v
 
 - **Home**: `index.html`
 - **Company**: `aboutus.html`, `employment.html`, `contactus.html`, `faq.html`, `research.html`
-- **Products (Defense)**:
+- **Products (Defense)**: `defense-products.html`
   - `bandit-rpas.html` (Bandit UAS)
   - `tacamo-rpas.html` (Tacamo UAS)
   - `bandito-pglm.html` (Bandito MAV)
   - `sru.html` (Stores Release Unit)
   - `counter-uas.html` (Counter UAS Base Protection)
-- **Products (Commercial)**:
+- **Products (Commercial)**: `commercial-products.html`
   - `gt100hl-rpas.html`
   - `gt50t-rpas.html`
   - `gt380-rpas.html`
   - `gt1500-rpas.html`
-- **Services**:
-  - `pna.html` (Products & Services Overview)
+- **Services**: `services.html`
   - `cfmt.html` (Composite Manufacturing)
   - `cctm.html` (Custom Tooling)
   - `uasfc.html` (Flight Crews & Training)
