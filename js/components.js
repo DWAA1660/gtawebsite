@@ -77,7 +77,6 @@ const footerHTML = `
                         <li><a href="defense-products.html">Defense Systems</a></li>
                         <li><a href="commercial-products.html">Commercial Aircraft</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="research.html">Research & Development</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contactus.html">Contact</a></li>
                     </ul>
